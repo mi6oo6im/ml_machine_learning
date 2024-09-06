@@ -29,6 +29,7 @@ Pandas, Numpy, Seaborn, Scikit-learn
 * Allows numpy to perform element-wise operations between arrays of different shapes.
 **7. Common in Computer Imaging:**
 * Numpy is frequently used in computer vision tasks for image data manipulation.
+
 ## Pandas:
 **1. Series and DataFrames:**
 * **Series** is a one-dimensional labeled array, and DataFrames are two-dimensional, allowing manipulation of tabular data.
@@ -58,6 +59,7 @@ Pandas, Numpy, Seaborn, Scikit-learn
     * **sort_values():** Sorts DataFrames by specified values.
     * **reset_index():** Resets the index of a DataFrame.
 * **group_by():** Groups data by specific columns.
+
 ## Matplotlib:
 **1. Plotting:**
 * **np.linspace(0, 10, 5):** Generates linearly spaced values for plotting.
@@ -80,75 +82,104 @@ Pandas, Numpy, Seaborn, Scikit-learn
 * **AI, ML, DL:** Artificial Intelligence, Machine Learning, and Deep Learning are interrelated fields, with DL being a subset of ML, which itself is a subset of AI.
 
 ## Key Concepts in ML:
-Traditional vs. ML Paradigm:
-Traditional programming yields deterministic outputs (same input gives the same output), whereas ML models learn patterns and provide predictions.
-Training and Testing Split:
-Machine Learning splits data into training (for learning) and testing (for evaluation).
-ML = Predictive Analytics:
-The main objective of ML is to make predictions based on historical data.
-Core Elements of Machine Learning:
-Dependent Variable (Target) vs. Independent Variables (Features):
-Dependent variable is what you are trying to predict (y), while independent variables (X) are the inputs.
-Data Splitting:
-X_train, X_test, y_train, y_test split into training and testing sets.
-Correlation between independent variables is crucial for better model performance.
-Continuous vs. Discrete Targets:
-In ML, target variables can be continuous (e.g., regression) or discrete (e.g., classification).
-Supervised vs. Unsupervised Learning:
-Supervised Learning:
-Uses labeled data with both X and y to make predictions.
-Unsupervised Learning:
-Only uses input data X, without labeled output y.
-Regression Models:
-Linear Regression:
-Basic form: y = mx + c, where m is the slope and c is the y-intercept. The goal is to find the "line of best fit" that generalizes predictions.
-Polynomial Regression:
-Extends linear regression by fitting a curve through the data points.
-Hyperplane:
-In higher dimensions (3+), regression models fit a plane or hyperplane instead of a line.
-Risk in Extrapolation:
-Extrapolating beyond the range of data is risky and prone to errors.
-Machine Learning Algorithms:
-Regression Algorithms:
-Linear Regression: Simple and widely used but limited for non-linear relationships.
-Decision Trees: More complex but offer higher accuracy.
-Random Forest: A collection of decision trees for better generalization (n_estimators=100 by default).
-XGBoost: Optimized version of boosting algorithms for high performance.
-Feature Selection:
-Recursive Feature Elimination (RFE): Iteratively removes less important features.
-RFECV: Cross-validated version of RFE to improve model reliability.
-Model Evaluation Metrics:
-Metrics:
-R² Score: Measures the proportion of variance explained by the model, where a value closer to 1 is better (0.8 is industry standard).
-Mean Absolute Error (MAE): Average magnitude of errors.
-Mean Squared Error (MSE): Penalizes larger errors more than MAE.
-Root Mean Squared Error (RMSE): Square root of MSE; commonly used in regression models.
-Adjusted R²:
-Adjusts R² for the number of predictors, accounting for their significance.
-Train/Test Split and Scaling:
-Train/Test Split:
-Commonly 80% training and 20% testing.
-Shuffle=True by default to avoid bias.
-Scaling and Normalization:
-MinMax Scaler: Rescales features to a range.
-Standard Scaler (Z-score): Centers around 0 with a standard deviation of 1. This is often preferred over MinMax scaling.
-Advanced Techniques:
-Hyperparameter Tuning:
-Adjusting model parameters to optimize performance using techniques like GridSearchCV.
-Support Vector Regressor (SVR):
-Used for both regression and classification with high accuracy, especially in complex datasets.
-Visualization and Exploration:
-Seaborn:
-sns.pairplot(): Visualizes relationships between pairs of features.
-sns.heatmap(): Displays correlation matrices with color-coding.
-Multicollinearity:
-Detects high correlation between independent variables, which can affect model performance.
-Use Pearson's correlation coefficient for analysis.
-Common Pitfalls in ML:
-Overfitting:
-When a model performs too well on training data but poorly on testing data (train-test score difference > 0.5).
-Underfitting:
-When the model fails to capture underlying patterns (train score < 0.8).
+**1. Traditional vs. ML Paradigm:**
+* Traditional programming yields deterministic outputs (same input gives the same output), whereas ML models learn patterns and provide predictions.
+**2. Training and Testing Split:**
+* Machine Learning splits data into training (for learning) and testing (for evaluation).
+**3. ML = Predictive Analytics:**
+* The main objective of ML is to make predictions based on historical data.
+
+## Core Elements of Machine Learning:
+**1. Dependent Variable (Target) vs. Independent Variables (Features):**
+* Dependent variable is what you are trying to predict (y), while independent variables (X) are the inputs.
+**2. Data Splitting:**
+* X_train, X_test, y_train, y_test split into training and testing sets.
+* Correlation between independent variables is crucial for better model performance.
+**3. Continuous vs. Discrete Targets:**
+* In ML, target variables can be continuous (e.g., regression) or discrete (e.g., classification).
+
+## Supervised vs. Unsupervised Learning:
+**1. Supervised Learning:**
+* Uses labeled data with both X and y to make predictions.
+**2. Unsupervised Learning:**
+* Only uses input data X, without labeled output y.
+
+## Regression Models:
+**1. Linear Regression:**
+* Basic form: $y = mx + c$, where m is the slope and c is the y-intercept. The goal is to find the "line of best fit" that generalizes predictions.
+**2. Polynomial Regression:**
+* Extends linear regression by fitting a curve through the data points. $y = a_0 + a_1x + a_2x^2 + a_3x^3 + \cdots + a_nx^n$<br>
+Where $a_0, a_1x, a_2$ are the coefficients of the polynomial terms.
+
+**3. Hyperplane:**
+* In higher dimensions (3+), regression models fit a plane or hyperplane instead of a line.
+**4. Risk in Extrapolation:**
+* Extrapolating beyond the range of data is risky and prone to errors.
+
+## Machine Learning Algorithms:
+**1. Regression Algorithms:**
+* **Linear Regression:** Simple and widely used but limited for non-linear relationships.
+* **Decision Trees:** More complex but offer higher accuracy.
+* **Random Forest:** A collection of decision trees for better generalization (n_estimators=100 by default).
+* **XGBoost:** Optimized version of boosting algorithms for high performance.
+**2. Feature Selection:**
+* **Recursive Feature Elimination (RFE):** Iteratively removes less important features.
+* **RFECV:** Cross-validated version of RFE to improve model reliability.
+
+## Model Evaluation Metrics:
+**1. Metrics:**
+* **Mean Absolute Error (MAE):** Average magnitude of errors. 
+$$\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} | y_i - \hat{y}_i |$$
+* **Mean Squared Error (MSE):** Penalizes larger errors more than MAE.
+$$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$
+* **Root Mean Squared Error (RMSE):** Square root of MSE; commonly used in regression models.
+$$\text{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 }$$
+* **R² Score:** Measures the proportion of variance explained by the model, where a value closer to 1 is better (0.8 is industry standard).
+$$R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}$$
+* **Adjusted R²:** Adjusts R² for the number of predictors, accounting for their significance.
+$$\text{Adjusted } R^2 = 1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}$$
+
+Where:
+* $y_i = $ Actual value
+* $\hat{y}_i = $ Predicted value
+* $\bar{y} = $ Mean of actual values
+* $n = $ Number of data points
+* $p = $ Number of predictors in the model
+
+2. Industry standard: 
+* >= 80% testing accuracy; < 5% training - testing accuracy
+
+## Train/Test Split and Scaling:
+**1 Train/Test Split:**
+* Commonly 80% training and 20% testing.
+* **Shuffle=True** by default to avoid bias.
+**2. Scaling and Normalization:**
+* MinMax Scaler: Rescales features to a range [0, 1].
+$$X_{\text{scaled}} = \frac{X - X_{\text{min}}}{X_{\text{max}} - X_{\text{min}}}$$
+* Standard Scaler (Z-score): Centers around 0 with a standard deviation of 1. This is often preferred over MinMax scaling.
+$$Z = \frac{X - \mu}{\sigma}$$
+Where 𝜇 is the mean and σ is the standard deviation of the dataset.
+
+## Advanced Techniques:
+**1. Hyperparameter Tuning:**
+* Adjusting model parameters to optimize performance using techniques like GridSearchCV.
+**2. Support Vector Regressor (SVR):**
+* Used for both regression and classification with high accuracy, especially in complex datasets.
+
+## Advanced Visualization and Exploration:
+**1. Seaborn:**
+* **sns.pairplot():** Visualizes relationships between pairs of features.
+* **sns.heatmap():** Displays correlation matrices with color-coding.
+**2. Multicollinearity:**
+* Detects high correlation between independent variables, which can affect model performance.
+* Use **Pearson's correlation** coefficient for analysis.
+
+## Common Pitfalls in ML:
+**1. Overfitting:**
+* When a model performs too well on training data but poorly on testing data (train-test score difference > 0.5).
+
+**2. Underfitting:**
+* When the model fails to capture underlying patterns (train score < 0.8).
 
 <br>
 <br>
