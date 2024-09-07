@@ -1,12 +1,14 @@
 # **Introduction to Machine Learning and Artificial Intelligence (August - September 2024)**
 <br>
 
-# Day 1: Introduction to Data Science, Numpy, Pandas, Matplotlib
+![alt text](image.png)
+
 **Lecturer:** Dr. Darshan Ingle
 
 **Modules Covered:**
+Matplotlib (matplotlib), WordCloud (wordcloud), HuggingFace Transformers (transformers), FastText (fasttext), Numpy (numpy), SMOTE (imblearn.over_sampling.SMOTE), GloVe (glove-python), Keras API (tensorflow.keras), NLTK (nltk), Seaborn (seaborn), Keras (tensorflow.keras), TQDM (tqdm), TensorFlow (tensorflow), Pandas (pandas), Scikit-learn (sklearn)
 
-Pandas, Numpy, Seaborn, Scikit-learn
+# Day 1: Introduction to Data Science, Numpy, Pandas, Matplotlib
 
 ## Numpy (Numerical Python):
 **1. ndarray:** N-dimensional array used for handling large datasets in numerical computing.
@@ -76,7 +78,6 @@ Pandas, Numpy, Seaborn, Scikit-learn
 # Day 2: Classical Machine Learning
 
 ## Historical Context:
-
 * **Machine Learning (ML) has been evolving since 1949.**
 * **"Data is the new oil" (2014):** Highlights the immense value of data in today's digital economy.
 * **AI, ML, DL:** Artificial Intelligence, Machine Learning, and Deep Learning are interrelated fields, with DL being a subset of ML, which itself is a subset of AI.
@@ -184,81 +185,81 @@ Where 𝜇 is the mean and σ is the standard deviation of the dataset.
 <br>
 <br>
 
-Day 3: Data Classification Models
-Key Concepts:
+# Day 3: Data Classification Models
 
-Hyperparameter Tuning:
+## Key Concepts:
+**1. Hyperparameter Tuning:**
+* **GridSearchCV:** Searches exhaustively over a specified parameter grid to find the best combination.
+* **RandomizedSearchCV:** Samples a fixed number of parameter combinations from a specified distribution, making it faster than GridSearchCV.
 
-GridSearchCV: Searches exhaustively over a specified parameter grid to find the best combination.
-RandomizedSearchCV: Samples a fixed number of parameter combinations from a specified distribution, making it faster than GridSearchCV.
-Classification Algorithms:
+**2. Classification Algorithms:**
+* Focus on predicting categorical outcomes (e.g., whether a passenger survived on the Titanic).
 
-Focus on predicting categorical outcomes (e.g., whether a passenger survived on the Titanic).
-Metrics:
+**3. Metrics:**
+* Evaluating model performance based on various metrics.
 
-Evaluating model performance based on various metrics.
-Titanic Dataset:
-Objective:
 
-Predict passenger survival based on features from the dataset.
-Data Preparation:
+## Titanic Dataset:
+**1. Objective:**
+* Predict passenger survival based on features from the dataset.
 
-Handling Missing Values:
-fillna() method in Pandas: Fills missing values in the dataset.
-Use mode() for categorical data (most frequent value).
-For numerical data:
-If data is normally distributed, use the mean.
-For skewed data, use the median.
-Skewness:
-Data with skewness between -0.5 and 0.5 is almost symmetrical, so filling missing values with the mean is reasonable.
-For positively or negatively skewed data, use the median.
-Feature Engineering:
+**2. Data Preparation:**
+* **Handling Missing Values:**
+    * fillna() method in Pandas: Fills missing values in the dataset.
+    * Use mode() for categorical data (most frequent value).
+    * For numerical data:
+        * If data is normally distributed, use the mean.
+        * For skewed data, use the median.
+* **Skewness:**
+    * Data with skewness between -0.5 and 0.5 is almost symmetrical, so filling missing values with the mean is reasonable.
+    * For positively or negatively skewed data, use the median.
 
-Family Size: Creating new features from existing data.
-Get Dummies: Convert categorical variables into dummy/indicator variables using pd.get_dummies().
-Drop First: Avoids multicollinearity by dropping the first dummy variable.
-Normalization:
+**3. Feature Engineering:**
+* Family Size: Creating new features from existing data.
+* Get Dummies: Convert categorical variables into dummy/indicator variables using pd.get_dummies().
+    * Drop First: Avoids multicollinearity by dropping the first dummy variable.
 
-Standard Scaler: Normalizes data by scaling features to have a mean of 0 and a standard deviation of 1.
-Modeling:
+**4. Normalization:**
+* **Standard Scaler:** Normalizes data by scaling features to have a mean of 0 and a standard deviation of 1.
 
-Logistic Regression:
-Accuracy Score: Proportion of correctly classified instances.
-Confusion Matrix: A table showing the performance of a classification model, detailing false positives, false negatives, true positives, and true negatives.
-False Positive (FP): Incorrectly predicted positive.
-False Negative (FN): Incorrectly predicted negative.
-True Positive (TP): Correctly predicted positive.
-True Negative (TN): Correctly predicted negative.
-Accuracy: (TP + TN) / N where N is the total number of samples, useful when data is balanced.
-Sensitivity (Recall): TP / (TP + FP), measures the proportion of actual positives correctly identified.
-Specificity: TN / (TN + FP), measures the proportion of actual negatives correctly identified.
-F1 Score: Harmonic mean of precision and recall, useful for imbalanced datasets.
-Decision Tree Classifier:
+**5. Modeling:**
+* **Logistic Regression:**
+    * **Accuracy Score:** Proportion of correctly classified instances.
+    * **Confusion Matrix:** A table showing the performance of a classification model, detailing false positives, false negatives, true positives, and true negatives.
+        * **False Positive (FP):** Incorrectly predicted positive.
+        * **False Negative (FN):** Incorrectly predicted negative.
+        * **True Positive (TP):** Correctly predicted positive.
+        * **True Negative (TN):** Correctly predicted negative.
+    * **Accuracy:** (TP + TN) / N where N is the total number of samples, useful when data is balanced.
+    * **Sensitivity (Recall):** TP / (TP + FP), measures the proportion of actual positives correctly identified.
+    * **Specificity:** TN / (TN + FP), measures the proportion of actual negatives correctly identified.
+    * **F1 Score:** Harmonic mean of precision and recall, useful for imbalanced datasets.
 
-A model that splits data into branches to make predictions based on feature values.
-CatBoost Classifier:
+**6. Decision Tree Classifier:**
+* A model that splits data into branches to make predictions based on feature values.
 
-A gradient boosting algorithm that handles categorical features well.
-Unsupervised Learning:
-Clustering:
+**7. CatBoost Classifier:**
+* A gradient boosting algorithm that handles categorical features well.
 
-Objective: Grouping unlabeled data into clusters based on similarity.
-Centroid: The average of all points in a cluster.
-K-means Clustering:
+## Unsupervised Learning:
+**1. Clustering:**
+* **Objective:** Grouping unlabeled data into clusters based on similarity.
+* **Centroid:** The average of all points in a cluster.
 
-Euclidean Distance: Measures the distance between points and centroids.
-Iteration: Algorithm iterates until cluster assignments no longer change.
-Shopping Mall Example: Using clustering to segment customers based on their shopping behaviors.
-Clustering Techniques:
+**2. K-means Clustering:**
+* **Euclidean Distance:** Measures the distance between points and centroids.
+* **Iteration:** Algorithm iterates until cluster assignments no longer change.
+* **Shopping Mall Example:** Using clustering to segment customers based on their shopping behaviors.
 
-Hopkins Test: Determines if clustering is feasible by running 1000 iterations and checking the number of values greater than 0.7.
-Elbow Method: Helps determine the optimal number of clusters by plotting the inertia (within-cluster variance) against the number of clusters.
-Silhouette Score: Evaluates the cohesion and separation of clusters.
-Hierarchical Clustering: Builds a hierarchy of clusters using either agglomerative (bottom-up) or divisive (top-down) methods.
-Not Ideal for Categorical Data: K-means may struggle with categorical features.
-TQDM:
+**3. Clustering Techniques:**
+* **Hopkins Test:** Determines if clustering is feasible by running 1000 iterations and checking the number of values greater than 0.7.
+* **Elbow Method:** Helps determine the optimal number of clusters by plotting the inertia (within-cluster variance) against the number of clusters.
+* **Silhouette Score:** Evaluates the cohesion and separation of clusters.
+* **Hierarchical Clustering:** Builds a hierarchy of clusters using either agglomerative (bottom-up) or divisive (top-down) methods.
+    * **Not Ideal for Categorical Data:** K-means may struggle with categorical features.
 
-Provides a progress bar for iterations, useful for monitoring long-running processes.
+**4. TQDM:**
+* Provides a progress bar for iterations, useful for monitoring long-running processes.
 
 
 <br>
