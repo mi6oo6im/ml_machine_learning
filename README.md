@@ -402,10 +402,11 @@ $$\begin{align*}
 <br>
 <br>
 
-## Day 5: Recurrent Neural Networks (RNN) and Large Language Models (LLM)
-**1. Recurrent Neural Networks (RNN):**
-* Purpose: Designed to handle sequential data, such as time series or text.
-* Activation Function: Often use the tanh activation function to introduce non-linearity.
+# Day 5: Recurrent Neural Networks (RNN) and Large Language Models (LLM)
+## Recurrent Neural Networks (RNN):
+**1. Purpose:** 
+* Designed to handle sequential data, such as time series or text.
+* **Activation Function:** Often use the tanh activation function to introduce non-linearity.
 
 **2. Sequence to Sequence Modeling:**
 * A type of RNN model used for tasks like translation or summarization where input and output are sequences.
@@ -413,100 +414,110 @@ $$\begin{align*}
 **3. Word Embeddings:**
 * Represent words as vectors in a continuous vector space, capturing semantic meanings.
 
-**4. Text Processing:**
+**4. Text Prerocessing:**
 * **Lowercasing:** Converts all characters to lowercase.
 * **Tokenization:** Splits text into words or tokens.
 * **Punctuation and Stop Words Removal:** Eliminates unnecessary punctuation and common words that might not contribute to meaning.
 * **Stemming and Lemmatization:** Reduces words to their base or root forms.
 * **Handling Contractions:** Expands contractions (e.g., “don’t” to “do not”).
 * **Emoji handling:**
+    * **Mapping Emojis:** Map emojis to textual representations to include them in text analysis.
     * [Solutions ChatGPT](https://chatgpt.com/share/aa12a519-9b42-429c-b530-4771d62c2178)
 
-NLTK Library:
+**5. NLTK Library:**
+* **Stem:** Provides stemming functionalities.
 
-Stem: Provides stemming functionalities.
-Sentiment Analysis Preprocessing:
+**6. Sentiment Analysis Preprocessing:**
+* Involves cleaning and preparing text data for sentiment classification.
 
-Involves cleaning and preparing text data for sentiment classification.
-Count Vectorizer:
+**7. Count Vectorizer:**
+* Bag of Words Model: Represents text as the frequency of words. Not very powerful but simple.
 
-Bag of Words Model: Represents text as the frequency of words. Not very powerful but simple.
-TF-IDF (Term Frequency-Inverse Document Frequency):
+**8. TF-IDF (Term Frequency-Inverse Document Frequency):**
+* A more advanced technique that reflects how important a word is in a document relative to its frequency across all documents.
 
-A more advanced technique that reflects how important a word is in a document relative to its frequency across all documents.
-Sentiment Classification:
+**9. Sentiment Classification:**
+**Examples:** Analyzing movie reviews or restaurant feedback to classify sentiment.
 
-Examples: Analyzing movie reviews or restaurant feedback to classify sentiment.
-Handling Emojis:
+**10. The Vanishing Gradient Problem:**
+* A problem where gradients become very small during backpropagation, causing slow learning.
 
-Mapping Emojis: Map emojis to textual representations to include them in text analysis.
-The Vanishing Gradient Problem:
+**11. Long Short-Term Memory (LSTM):**
+* A type of RNN that can remember long-term dependencies by using memory cells to store information.
 
-A problem where gradients become very small during backpropagation, causing slow learning.
-Long Short-Term Memory (LSTM):
+**12. Attention Mechanism:**
+* Allows models to focus on different parts of the input sequence when making predictions.
 
-A type of RNN that can remember long-term dependencies by using memory cells to store information.
-Attention Mechanism:
+**13. Transformers:**
+* Models that handle entire sequences at once, addressing limitations of RNNs.
 
-Allows models to focus on different parts of the input sequence when making predictions.
-Transformers:
+14. ANM retention comparison:
+* **RNN:** Can remember up to 8 words.
+* **LSTM**: Can remember 50-100 words.
+* **Attention Mechanism:** Handles 1000 words.
+* **Transformers:** Efficiently process entire sequences.
 
-Models that handle entire sequences at once, addressing limitations of RNNs.
-LSTM vs. Transformers:
+**15. Spam/Ham Classification example:**
+* Classification task to differentiate between spam and non-spam messages.
 
-LSTM: Can remember 50-100 words.
-Attention Mechanism: Handles 1000 words.
-Transformers: Efficiently process entire sequences.
-Spam/Ham Classification:
+**16. Handling Class Imbalance:**
+*   Techniques such as **SMOTE** (Synthetic Minority Over-sampling Technique), **MSMOTE** (Modified SMOTE), **KNN** (K-Nearest Neighbors), and **boosting**.
 
-Classification task to differentiate between spam and non-spam messages.
-Handling Class Imbalance:
+**17. Keras Pad Sequences:**
+* Adds padding to sequences to ensure uniform length across all input sequences.
 
-Techniques such as SMOTE (Synthetic Minority Over-sampling Technique), MSMOTE (Modified SMOTE), KNN (K-Nearest Neighbors), and boosting methods.
-Keras Pad Sequences:
+**18. Early Stopping:**
+* Stops training when the model's performance on a validation set stops improving, based on hyperparameters like **min_delta** and **patience**.
 
-Adds padding to sequences to ensure uniform length across all input sequences.
-Early Stopping:
+**19. Embedding:**
+* Represents categorical variables (like words) as dense vectors.
 
-Stops training when the model's performance on a validation set stops improving, based on hyperparameters like min_delta and patience.
-Embedding:
+**20. Sparse vs. Dense Matrices:**
+* **Sparse Matrix:** Contains mostly zeros, used to store large-scale data efficiently.
+* **Dense Matrix:** Contains mostly non-zero elements.
 
-Represents categorical variables (like words) as dense vectors.
-Sparse vs. Dense Matrices:
+**21. Word Embedding Models:**
+* **GloVe (Global Vectors for Word Representation):** Pretrained embeddings capturing word similarities.
+* **FastText:** Extends word embeddings to include subword information.
+* **GoogleNet and AlexNet:** Convolutional neural networks for image classification (not directly related to text, but influential in neural network development).
 
-Sparse Matrix: Contains mostly zeros, used to store large-scale data efficiently.
-Dense Matrix: Contains mostly non-zero elements.
-Word Embedding Models:
+## Transformers and HuggingFace:
 
-GloVe (Global Vectors for Word Representation): Pretrained embeddings capturing word similarities.
-FastText: Extends word embeddings to include subword information.
-GoogleNet and AlexNet: Convolutional neural networks for image classification (not directly related to text, but influential in neural network development).
-Transformers and HuggingFace:
+**1. HuggingFace:** 
+* Provides pre-trained transformer models and tools.
+* [HuggingFace link](https://huggingface.co)
+* **Example:** Summarizing text using HuggingFace's models. Image generation. Translation.
 
-HuggingFace: Provides pre-trained transformer models and tools.
-DistilBART: A distilled version of the BART model for text summarization.
-Example: Summarizing text using HuggingFace's models.
-Retrieval-Augmented Generation (RAG):
+**2. DistilBART:** A distilled version of the BART model for text summarization.
 
-Combines retrieval-based and generative approaches for more effective text generation.
-OpenAI Playground:
+**3.Retrieval-Augmented Generation (RAG):**
+* Combines retrieval-based and generative approaches for more effective text generation.
 
-An interactive tool for experimenting with OpenAI's language models.
-Fine-Tuning Large Language Models (LLM):
+## Fine-Tuning Large Language Models (LLM):
 
-Adjusting pre-trained models to better fit specific tasks or datasets.
+**1. OpenAI Playground:**
+* An interactive tool for experimenting with OpenAI's language models.
+* Adjusting pre-trained models to better fit specific tasks or datasets.
+* Retrieval-Augmented Generation
 
-# Future Topics:
-**1. Intro to GANs (Generative Adversarial Networks):** Models for generating new data samples.
+## Future Topics:
+**1. Intro to GANs (Generative Adversarial Networks):** 
+* Models for generating new data samples.
 
-**2. VAEs (Variational Autoencoders):** Generative models that learn latent representations.
+**2. VAEs (Variational Autoencoders):** 
+* Generative models that learn latent representations.
 
-**3. OpenAI API:** API for interacting with OpenAI models.
+**3. OpenAI API:** 
+* API for interacting with OpenAI models.
 
-**4. Prompt Engineering:** Designing effective prompts for LLMs.
+**4. Prompt Engineering:** 
+* Designing effective prompts for LLMs.
 
-**5. LangChain:** Framework for building applications with language models.
+**5. LangChain:** 
+* Framework for building applications with language models.
 
-**6. Other Models:** Exploring models like LLaMA (Large Language Model Meta AI).
+**6. Other Models:** 
+* Exploring models like LLaMA (Large Language Model Meta AI).
 
-**7. RAG:** Retrieval-Augmented Generation
+**7. RAG:** 
+* Retrieval-Augmented Generation
