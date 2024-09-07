@@ -8,15 +8,21 @@
 **Modules Covered:**
 Matplotlib (matplotlib), WordCloud (wordcloud), HuggingFace Transformers (transformers), FastText (fasttext), Numpy (numpy), SMOTE (imblearn.over_sampling.SMOTE), GloVe (glove-python), Keras API (tensorflow.keras), NLTK (nltk), Seaborn (seaborn), Keras (tensorflow.keras), TQDM (tqdm), TensorFlow (tensorflow), Pandas (pandas), Scikit-learn (sklearn)
 
+<br>
+<br>
+
 # Day 1: Introduction to Data Science, Numpy, Pandas, Matplotlib
 
 ## Numpy (Numerical Python):
 **1. ndarray:** N-dimensional array used for handling large datasets in numerical computing.
+
 **2. nparray:** A shorthand for numpy arrays; allows vectorized operations, making it efficient for large-scale calculations.
+
 **3. Attributes:**
 * **dtype:** Data type of elements in the array.
 * **ndim:** Number of dimensions of the array.
 * **shape:** The structure of the array (rows, columns).
+
 **4. Creating arrays:**
 * **np.array(data, dtype):** Creates a numpy array with specific data and data type.
 * **np.zeros((2,3)):** Creates a 2x3 matrix filled with zeroes.
@@ -25,17 +31,22 @@ Matplotlib (matplotlib), WordCloud (wordcloud), HuggingFace Transformers (transf
 * **np.random.randint(3, 4):** Generates random integers within a range.
 * **np.arange(12):** Creates an array with a sequence of numbers.
 * **np.reshape(3, 4):** Reshapes an array into a 3x4 matrix.
+
 **5. Linear Algebra Operations:**
 * **np.linalg.solve:** Solves a linear matrix equation.
+
 **6. Broadcasting:**
 * Allows numpy to perform element-wise operations between arrays of different shapes.
+
 **7. Common in Computer Imaging:**
 * Numpy is frequently used in computer vision tasks for image data manipulation.
 
-## Pandas:
+## Pandas (Python for Analytics and Data Science):
 **1. Series and DataFrames:**
-* **Series** is a one-dimensional labeled array, and DataFrames are two-dimensional, allowing manipulation of tabular data.
-2. **Basic Operations:**
+* **Series:** one-dimensional labeled array
+* **DataFrames:** two-dimensional, allowing manipulation of tabular data.
+
+**2. Basic Operations:**
 * **Indexes:** Label-based indexing for accessing data.
 * **Pandas broadcasting:** Applying operations over DataFrames.
 * **pd.read():** Reads data from files into DataFrames.
@@ -43,6 +54,7 @@ Matplotlib (matplotlib), WordCloud (wordcloud), HuggingFace Transformers (transf
 * **shape:** Returns the dimensionality of a DataFrame.
 * **Set options:** Adjusts display settings like the number of rows and columns.
 * **Limit:** Pandas is best suited for datasets of up to 5-10 million rows; for larger datasets, PySpark or Apache architectures are recommended.
+
 **3. Useful Methods:**
 * **unique():** Returns unique values in a column.
 * **normalize=True:** Normalizes data for better interpretability.
@@ -54,6 +66,7 @@ Matplotlib (matplotlib), WordCloud (wordcloud), HuggingFace Transformers (transf
 * **apply():** Applies a function along an axis of the DataFrame.
 * **sum(axis=0/1):** Computes the sum along a specific axis.
 * **loc vs. iloc:** Explicit vs. implicit indexing for data access.
+
 **4. Merging and Concatenation:**
 * **pd.merge(on='column'):** Merges DataFrames on a common column.
 * **pd.concat:** Concatenates two or more DataFrames.
@@ -62,11 +75,12 @@ Matplotlib (matplotlib), WordCloud (wordcloud), HuggingFace Transformers (transf
     * **reset_index():** Resets the index of a DataFrame.
 * **group_by():** Groups data by specific columns.
 
-## Matplotlib:
+## Matplotlib (Math Plotting Library):
 **1. Plotting:**
 * **np.linspace(0, 10, 5):** Generates linearly spaced values for plotting.
 * **plt.figure(figsize=(3,4)):** Creates a figure with specified dimensions.
 * **plt.subplot(2,1,1):** Creates a subplot in a figure.
+
 **2. Subplotting:**
 * **fig, ax = plt.subplots(2):** Creates multiple subplots.
 * **grid:** Adds a grid to the plot.
@@ -75,7 +89,7 @@ Matplotlib (matplotlib), WordCloud (wordcloud), HuggingFace Transformers (transf
 <br>
 <br>
 
-# Day 2: Classical Machine Learning
+# Day 2: Classical Machine Learning - Regression models
 
 ## Historical Context:
 * **Machine Learning (ML) has been evolving since 1949.**
@@ -85,35 +99,42 @@ Matplotlib (matplotlib), WordCloud (wordcloud), HuggingFace Transformers (transf
 ## Key Concepts in ML:
 **1. Traditional vs. ML Paradigm:**
 * Traditional programming yields deterministic outputs (same input gives the same output), whereas ML models learn patterns and provide predictions.
+
 **2. Training and Testing Split:**
 * Machine Learning splits data into training (for learning) and testing (for evaluation).
+
 **3. ML = Predictive Analytics:**
 * The main objective of ML is to make predictions based on historical data.
 
 ## Core Elements of Machine Learning:
 **1. Dependent Variable (Target) vs. Independent Variables (Features):**
 * Dependent variable is what you are trying to predict (y), while independent variables (X) are the inputs.
+
 **2. Data Splitting:**
 * X_train, X_test, y_train, y_test split into training and testing sets.
 * Correlation between independent variables is crucial for better model performance.
+
 **3. Continuous vs. Discrete Targets:**
 * In ML, target variables can be continuous (e.g., regression) or discrete (e.g., classification).
 
 ## Supervised vs. Unsupervised Learning:
 **1. Supervised Learning:**
 * Uses labeled data with both X and y to make predictions.
+
 **2. Unsupervised Learning:**
 * Only uses input data X, without labeled output y.
 
 ## Regression Models:
 **1. Linear Regression:**
 * Basic form: $y = mx + c$, where m is the slope and c is the y-intercept. The goal is to find the "line of best fit" that generalizes predictions.
+
 **2. Polynomial Regression:**
 * Extends linear regression by fitting a curve through the data points. $y = a_0 + a_1x + a_2x^2 + a_3x^3 + \cdots + a_nx^n$<br>
 Where $a_0, a_1x, a_2$ are the coefficients of the polynomial terms.
 
 **3. Hyperplane:**
 * In higher dimensions (3+), regression models fit a plane or hyperplane instead of a line.
+
 **4. Risk in Extrapolation:**
 * Extrapolating beyond the range of data is risky and prone to errors.
 
@@ -123,6 +144,7 @@ Where $a_0, a_1x, a_2$ are the coefficients of the polynomial terms.
 * **Decision Trees:** More complex but offer higher accuracy.
 * **Random Forest:** A collection of decision trees for better generalization (n_estimators=100 by default).
 * **XGBoost:** Optimized version of boosting algorithms for high performance.
+
 **2. Feature Selection:**
 * **Recursive Feature Elimination (RFE):** Iteratively removes less important features.
 * **RFECV:** Cross-validated version of RFE to improve model reliability.
@@ -148,22 +170,25 @@ Where:
 * $p = $ Number of predictors in the model
 
 2. Industry standard: 
-* >= 80% testing accuracy; < 5% training - testing accuracy
+* Testing accuracy  $>= 80\%$ (Prevent Underfitting)
+* $(A_{training} - A_{testing}) < 5\%$ (Prevent Overfitting)
 
 ## Train/Test Split and Scaling:
 **1 Train/Test Split:**
 * Commonly 80% training and 20% testing.
 * **Shuffle=True** by default to avoid bias.
+
 **2. Scaling and Normalization:**
-* MinMax Scaler: Rescales features to a range [0, 1].
+* **MinMax Scaler:** Rescales features to a range [0, 1].
 $$X_{\text{scaled}} = \frac{X - X_{\text{min}}}{X_{\text{max}} - X_{\text{min}}}$$
-* Standard Scaler (Z-score): Centers around 0 with a standard deviation of 1. This is often preferred over MinMax scaling.
+* **Standard Scaler (Z-score):** Centers around 0 with a standard deviation of 1. This is often preferred over MinMax scaling.
 $$Z = \frac{X - \mu}{\sigma}$$
 Where 𝜇 is the mean and σ is the standard deviation of the dataset.
 
 ## Advanced Techniques:
 **1. Hyperparameter Tuning:**
 * Adjusting model parameters to optimize performance using techniques like GridSearchCV.
+
 **2. Support Vector Regressor (SVR):**
 * Used for both regression and classification with high accuracy, especially in complex datasets.
 
@@ -171,6 +196,7 @@ Where 𝜇 is the mean and σ is the standard deviation of the dataset.
 **1. Seaborn:**
 * **sns.pairplot():** Visualizes relationships between pairs of features.
 * **sns.heatmap():** Displays correlation matrices with color-coding.
+
 **2. Multicollinearity:**
 * Detects high correlation between independent variables, which can affect model performance.
 * Use **Pearson's correlation** coefficient for analysis.
@@ -185,7 +211,7 @@ Where 𝜇 is the mean and σ is the standard deviation of the dataset.
 <br>
 <br>
 
-# Day 3: Data Classification Models
+# Day 3: Classical Machine Learning: Data Classification Models. Unsupervised Learning (K-means Clustering)
 
 ## Key Concepts:
 **1. Hyperparameter Tuning:**
@@ -215,9 +241,9 @@ Where 𝜇 is the mean and σ is the standard deviation of the dataset.
     * For positively or negatively skewed data, use the median.
 
 **3. Feature Engineering:**
-* Family Size: Creating new features from existing data.
-* Get Dummies: Convert categorical variables into dummy/indicator variables using pd.get_dummies().
-    * Drop First: Avoids multicollinearity by dropping the first dummy variable.
+* **Family Size:** Creating new features from existing data.
+* **Get Dummies:** Convert categorical variables into dummy/indicator variables using pd.get_dummies().
+    * **Drop First:** Avoids multicollinearity by dropping the first dummy variable.
 
 **4. Normalization:**
 * **Standard Scaler:** Normalizes data by scaling features to have a mean of 0 and a standard deviation of 1.
@@ -265,122 +291,137 @@ Where 𝜇 is the mean and σ is the standard deviation of the dataset.
 <br>
 <br>
 
-Day 4: Artificial Neural Networks (ANN) and Deep Learning
-Key Concepts:
+# Day 4: Artificial Neural Networks (ANN) and Deep Learning. Convolutional Neural Networks (CNN)
+## Key Concepts:
+**1. Artificial Neural Networks:**
+* **Mimic Human Brain:** ANN models aim to simulate how the human brain processes information.
+* **Basic Flow:** Input → Processing → Output
 
-Artificial Neural Networks:
+**2. Training Process:**
+* **Epoch:** One forward pass (propagation) + one backward pass (propagation) through the network. An epoch refers to a complete iteration over the entire training dataset.
 
-Mimic Human Brain: ANN models aim to simulate how the human brain processes information.
-Basic Flow: Input → Processing → Output
-Training Process:
+**3. Frameworks and Libraries:**
+* **TensorFlow:** A popular open-source library for building and training neural networks.
+* **Keras API:** A high-level API for building and training neural networks that runs on top of TensorFlow (included in TF 2.0).
 
-Epoch: One forward pass + one backward pass through the network. An epoch refers to a complete iteration over the entire training dataset.
-Frameworks and Libraries:
+**4. Artificial Neuron (Perceptron):**
+* Developed in 1949, it is a basic unit of neural networks, inspired by biological neurons.
 
-TensorFlow: A popular open-source library for building and training neural networks.
-Keras API: A high-level API for building and training neural networks that runs on top of TensorFlow (included in TF 2.0).
-Artificial Neuron (Perceptron):
+**5. Example:**
+* Predicting whether to attend a Punjabi food festival based on weather, spouse’s preference, and availability of train/metro.
 
-Developed in 1949, it is a basic unit of neural networks, inspired by biological neurons.
-Example:
+**6. Mathematics of Neurons:**
+* **Thresholding:** An artificial neuron fires if the weighted sum of inputs exceeds a certain threshold 
+$$ \sum_{i} (X_i \cdot w_i) \geq \text{threshold} $$
+$$ \sum_{i} (X_i \cdot w_i) - \text{threshold} \geq 0 $$
+* **Bias:** 
+$$b = - \text{threshold}$$
+* **Activation Decision:**
+$$\begin{align*}
+\text{If }(w \cdot x) + b &\leq 0, \quad \text{the output is \textbf{false.}} \\
+\text{If }(w \cdot x) + b &> 0, \quad \text{the output is \textbf{true.}}
+\end{align*}$$
 
-Predicting whether to attend a Punjabi food festival based on weather, spouse’s preference, and availability of train/metro.
-Mathematics of Neurons:
+**7. Activation Functions:**
+* **Early Activation:** Step activation function (discrete, obsolete).
+* **Current Activation Functions:**
+    * **Binary Classification:** sigmoid
+    * **Multiclass Classification:** softmax
+    * **Regression:** linear
+    * **Hidden Layers:**
+        * **ReLU** (Rectified Linear Unit)
+        * **Leaky ReLU**
+        * **ELU** (Exponential Linear Unit): Good for reducing bias.
+        * **GELU** (Gaussian Error Linear Unit)
+        * **SELU** (Scaled Exponential Linear Unit)
+        * **SiLU** (Sigmoid Linear Unit)
+    * **Tanh:** Hyperbolic tangent function, useful for NLP tasks with values in the range [-1, 1].
+    * **Mish:** Effective for computer vision tasks.
+* [TensorFlow Activation Functions](https://www.tensorflow.org/api_docs/python/tf/keras/activations)
+* [Keras Activation Functions](https://keras.io/api/layers/activations/#tanh-function)
 
-Thresholding: An artificial neuron fires if the weighted sum of inputs exceeds a certain threshold (sum(Xi * wi) >= threshold).
-Bias: b = -threshold
-Activation Decision:
-If w * x + b <= 0, the output is false.
-If w * x + b > 0, the output is true.
-Activation Functions:
+**8. Model Building:**
+* **Single Perceptron Neural Network Example:** Basic ANN with one neuron.
+* **Activation Function:** Sigmoid for binary classification. SoftMax for multiclass.
+* **Dense Layers:** Fully connected layers where each neuron is connected to every neuron in the previous layer.
 
-Early Activation: Step activation function (discrete, obsolete).
-Current Activation Functions:
-Binary Classification: sigmoid
-Multiclass Classification: softmax
-Regression: linear
-Hidden Layers:
-ReLU (Rectified Linear Unit)
-Leaky ReLU
-ELU (Exponential Linear Unit): Good for reducing bias.
-GELU (Gaussian Error Linear Unit)
-SELU (Scaled Exponential Linear Unit)
-SiLU (Sigmoid Linear Unit)
-Tanh: Hyperbolic tangent function, useful for NLP tasks with values in the range [-1, 1].
-Mish: Effective for computer vision tasks.
-Model Building:
+**9. Optimization:**
+* **Optimizers:**
+    * **Adam:** Adaptive Moment Estimation.
+    * **SGD (Stochastic Gradient Descent):** A method for optimizing the loss function.
+* **Loss Functions:**
+    * **Binary Crossentropy:** Used for binary classification.
+    * **Sparse Categorical Crossentropy:** Used for multi-class classification where labels are integers.
 
-Single Perceptron Neural Network: Basic ANN with one neuron.
-Activation Function: Sigmoid for binary classification.
-Dense Layers: Fully connected layers where each neuron is connected to every neuron in the previous layer.
-Optimization:
+**10. Training Process:**
+    * **Forward Pass:** Calculating output from the input data.
+    * **Backpropagation:** Adjusting weights based on the error from the forward pass.
+    * **1 Epoch:** Includes one forward pass and one backward pass.
 
-Optimizers:
-Adam: Adaptive Moment Estimation.
-SGD (Stochastic Gradient Descent): A method for optimizing the loss function.
-Loss Functions:
-Binary Crossentropy: Used for binary classification.
-Sparse Categorical Crossentropy: Used for multi-class classification where labels are integers.
-Training Process:
+**11. Evaluation Metrics:**
+* **Accuracy:** Measure of how often the model's predictions are correct.
+* **Graphs:**
+    * **Loss/Validation Loss Graph:** Shows how the loss changes over epochs.
+    * **Accuracy/Validation Accuracy Graph:** Shows how the accuracy changes over epochs.
+* **r.history:** Object storing training metrics for plotting.
 
-Forward Pass: Calculating output from the input data.
-Backpropagation: Adjusting weights based on the error from the forward pass.
-1 Epoch: Includes one forward pass and one backward pass.
-Evaluation Metrics:
+**12. Output Handling:**
+* **Probability Output:** Neural networks often output probabilities (e.g., [0, 1] for binary classification).
+* **Rounding and Flattening:** Convert probabilities to class labels if necessary.
 
-Accuracy: Measure of how often the model's predictions are correct.
-Graphs:
-Loss/Validation Loss Graph: Shows how the loss changes over epochs.
-Accuracy/Validation Accuracy Graph: Shows how the accuracy changes over epochs.
-r.history: Object storing training metrics for plotting.
-Output Handling:
+**13. Saving and Defining Models:**
+* Saving: Save the model using a '.keras' extension.
+* Define SGD: Custom implementation if needed.
+* Pass model for Deployment.
 
-Probability Output: Neural networks often output probabilities (e.g., [0, 1] for binary classification).
-Rounding and Flattening: Convert probabilities to class labels if necessary.
-Saving and Defining Models:
+**14. MNIST Dataset:**
+* A classic dataset for digit recognition tasks.
 
-Saving: Save the model using a .keras extension.
-Define SGD: Custom implementation if needed.
-MNIST Dataset:
+**15. Batch Size:**
+* Default is 32. 
+* Refers to the number of samples processed before the model's internal parameters are updated.
 
-A classic dataset for digit recognition tasks.
-Batch Size:
+**16. Cluster Analysis:**
+* **Number of Neurons:** A common heuristic (approach to problem solving that employs a pragmatic method that is not fully optimized) is $2^n$ for hidden layers where n is the number of input features (peceptron count).
 
-Default is 32. Refers to the number of samples processed before the model's internal parameters are updated.
-Cluster Analysis:
+**17. Softmax Activation:**
+* Used for multiclass classification to convert logits to probabilities and handle overfitting.
 
-Number of Neurons: A common heuristic is 2n for hidden layers where n is the number of input features.
-Softmax Activation:
+**18. Dropout:** 
+* A Simple Way to Prevent Neural Networks from Overfitting
+* [Paper](https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
 
-Used for multiclass classification to convert logits to probabilities and handle overfitting.
-
+**19. Transfer Learning:**
+* **Concept of Tranfer Learning:** a pretrained model reused or adapted to a different, but related task.
+* Image handling using Transfer Learning with pretrained models
+* **Example:** Image recognition using VGG16
+* **Preprocessing for VGG16:**
+    * Typical preprocessing steps to adapt data for the VGG16 model involves resizing and normalization.
+* [Pretrained Model Suggestions ChatGPT](https://chatgpt.com/share/1f3d3db9-5181-40c1-a29a-c981d77cf8ad)
 
 <br>
 <br>
 
-Day 5: Recurrent Neural Networks (RNN) and Large Language Models (LLM)
-Key Concepts:
+## Day 5: Recurrent Neural Networks (RNN) and Large Language Models (LLM)
+**1. Recurrent Neural Networks (RNN):**
+* Purpose: Designed to handle sequential data, such as time series or text.
+* Activation Function: Often use the tanh activation function to introduce non-linearity.
 
-Preprocessing for VGG16:
+**2. Sequence to Sequence Modeling:**
+* A type of RNN model used for tasks like translation or summarization where input and output are sequences.
 
-Typical preprocessing steps to adapt data for the VGG16 model (not detailed here, but involves resizing and normalization).
-Recurrent Neural Networks (RNN):
+**3. Word Embeddings:**
+* Represent words as vectors in a continuous vector space, capturing semantic meanings.
 
-Purpose: Designed to handle sequential data, such as time series or text.
-Activation Function: Often use the tanh activation function to introduce non-linearity.
-Sequence to Sequence Modeling:
+**4. Text Processing:**
+* **Lowercasing:** Converts all characters to lowercase.
+* **Tokenization:** Splits text into words or tokens.
+* **Punctuation and Stop Words Removal:** Eliminates unnecessary punctuation and common words that might not contribute to meaning.
+* **Stemming and Lemmatization:** Reduces words to their base or root forms.
+* **Handling Contractions:** Expands contractions (e.g., “don’t” to “do not”).
+* **Emoji handling:**
+    * [Solutions ChatGPT](https://chatgpt.com/share/aa12a519-9b42-429c-b530-4771d62c2178)
 
-A type of RNN model used for tasks like translation or summarization where input and output are sequences.
-Word Embeddings:
-
-Represent words as vectors in a continuous vector space, capturing semantic meanings.
-Text Processing:
-
-Lowercasing: Converts all characters to lowercase.
-Tokenization: Splits text into words or tokens.
-Punctuation and Stop Words Removal: Eliminates unnecessary punctuation and common words that might not contribute to meaning.
-Stemming and Lemmatization: Reduces words to their base or root forms.
-Handling Contractions: Expands contractions (e.g., “don’t” to “do not”).
 NLTK Library:
 
 Stem: Provides stemming functionalities.
@@ -454,11 +495,18 @@ An interactive tool for experimenting with OpenAI's language models.
 Fine-Tuning Large Language Models (LLM):
 
 Adjusting pre-trained models to better fit specific tasks or datasets.
-Future Topics:
 
-* Intro to GANs (Generative Adversarial Networks): Models for generating new data samples.
-* VAEs (Variational Autoencoders): Generative models that learn latent representations.
-* OpenAI API: API for interacting with OpenAI models.
-* Prompt Engineering: Designing effective prompts for LLMs.
-* LangChain: Framework for building applications with language models.
-* Other Models: Exploring models like LLaMA (Large Language Model Meta AI).
+# Future Topics:
+**1. Intro to GANs (Generative Adversarial Networks):** Models for generating new data samples.
+
+**2. VAEs (Variational Autoencoders):** Generative models that learn latent representations.
+
+**3. OpenAI API:** API for interacting with OpenAI models.
+
+**4. Prompt Engineering:** Designing effective prompts for LLMs.
+
+**5. LangChain:** Framework for building applications with language models.
+
+**6. Other Models:** Exploring models like LLaMA (Large Language Model Meta AI).
+
+**7. RAG:** Retrieval-Augmented Generation
