@@ -1,7 +1,24 @@
-# **Introduction to Machine Learning and Artificial Intelligence (August - September 2024)**
+![alt text](ML_AI_notes_Aug_Sep_24/image.png)
+
+# **SoftUni Machine Learning (September - November 2024)**
+
+1. Introduction to Machine Learning [notebook](Machine_Learning_SoftUni_Sep_Nov_24/01.Introduction_to_Machine_Learning/notes.ipynb)
+1. Linear and Logistic Regression [notebook](#)
+1. Model Training and Improvement [notebook](#)
+1. Tree and Ensemble Methods [notebook](#)
+1. Support Vector Machines [notebook](#)
+1. Clustering [notebook](#)
+1. Dimensionality Reduction [notebook](#)
+1. Introduction to Neural Networks [notebook](#)
+1. Time series [notebook](#)
+1. Exam Preparation: End-to-end Project (Q&A session) [notebook](#)
+1. Course summary (Q&A session) [notebook](#)
+
+<br>
 <br>
 
-![alt text](ML_AI_notes_Aug_Sep_24/image.png)
+# **Introduction to Machine Learning and Artificial Intelligence (August - September 2024)**
+<br>
 
 **Lecturer:** Dr. Darshan Ingle
 
