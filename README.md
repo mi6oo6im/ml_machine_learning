@@ -3,17 +3,20 @@
 # **SoftUni Machine Learning (September - November 2024)**
 
 1. Introduction to Machine Learning [notebook](Machine_Learning_SoftUni_Sep_Nov_24/01.Introduction_to_Machine_Learning/notes.ipynb)
-1. Linear and Logistic Regression [notebook](#)
-1. Model Training and Improvement [notebook](#)
-1. Tree and Ensemble Methods [notebook](#)
-1. Support Vector Machines [notebook](#)
-1. Clustering [notebook](#)
-1. Dimensionality Reduction [notebook](#)
-1. Introduction to Neural Networks [notebook](#)
-1. Time series [notebook](#)
-1. Exam Preparation: End-to-end Project (Q&A session) [notebook](#)
-1. Course summary (Q&A session) [notebook](#)
+2. Linear and Logistic Regression [notebook](#)
+3. Model Training and Improvement [notebook](#)
+4. Tree and Ensemble Methods [notebook](#)
+5. Support Vector Machines [notebook](#)
+6. Clustering [notebook](#)
+7. Dimensionality Reduction [notebook](#)
+8. Introduction to Neural Networks [notebook](#)
+9. Time series [notebook](#)
+10. Exam Preparation: End-to-end Project (Q&A session) [notebook](#)
+11. Course summary (Q&A session) [notebook](#)
 
+## Papers for review:
+1. Dropout: A Simple Way to Prevent Neural Networks from Overfitting [link](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
+2. Mish: A Self Regularized Non-Monotonic Activation Function [link](https://arxiv.org/abs/1908.08681)
 <br>
 <br>
 
@@ -51,7 +54,7 @@ Matplotlib (matplotlib), WordCloud (wordcloud), HuggingFace Transformers (transf
 ### Day 4: [notebook](ML_AI_notes_Aug_Sep_24/day_4.ipynb)
 1. Artificial Neural Networks (ANN) and Deep Learning
 2. Convolutional Neural Networks (CNN)
-### Day 5:[notebook](ML_AI_notes_Aug_Sep_24/day_5.ipynb)
+### Day 5: [notebook](ML_AI_notes_Aug_Sep_24/day_5.ipynb)
 1. Recurrent Neural Networks (RNN)
 2. Transformers and HuggingFace
 3. Fine-Tuning Large Language Models (LLM)
