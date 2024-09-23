@@ -3,7 +3,7 @@
 # **SoftUni Machine Learning (September - November 2024)**
 
 1. Introduction to Machine Learning [notebook](Machine_Learning_SoftUni_Sep_Nov_24/01.Introduction_to_Machine_Learning/notes.ipynb)
-2. Linear and Logistic Regression [notebook](#)
+2. Linear and Logistic Regression [notebook](Machine_Learning_SoftUni_Sep_Nov_24/02.Linear_and_Logistic_Regressions/notes.ipynb)
 3. Model Training and Improvement [notebook](#)
 4. Tree and Ensemble Methods [notebook](#)
 5. Support Vector Machines [notebook](#)
