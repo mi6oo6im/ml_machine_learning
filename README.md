@@ -17,6 +17,7 @@
 ## Papers for review:
 1. Dropout: A Simple Way to Prevent Neural Networks from Overfitting [link](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
 2. Mish: A Self Regularized Non-Monotonic Activation Function [link](https://arxiv.org/abs/1908.08681)
+3. A Fast Learning Algorithm for Deep Belief Nets [link](https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf)
 <br>
 <br>
 
