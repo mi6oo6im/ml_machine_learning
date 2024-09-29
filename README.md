@@ -16,7 +16,11 @@
 
 ## Papers for review:
 ### Machine Learning:
-1. 
+1. Socially Fair k-Means Clustering, 17 Jun 2020 [link](https://paperswithcode.com/paper/fair-k-means-clustering)
+2. Adaptively Robust and Sparse K-means Clustering, 9 Jul 2024 [link](https://paperswithcode.com/paper/adaptively-robust-and-sparse-k-means)
+3. A Tutorial on Principal Component Analysis, 3 Apr 2014 [link](https://paperswithcode.com/paper/a-tutorial-on-principal-component-analysis)
+4. AutoSoccerPose: Automated 3D posture Analysis of Soccer Shot Movements, 20 May 2024  [link](https://paperswithcode.com/paper/autosoccerpose-automated-3d-posture-analysis)
+
 ### Deep learning:
 1. Dropout: A Simple Way to Prevent Neural Networks from Overfitting [link](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
 2. Mish: A Self Regularized Non-Monotonic Activation Function [link](https://arxiv.org/abs/1908.08681)
