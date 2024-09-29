@@ -2,19 +2,22 @@
 
 # **SoftUni Machine Learning (September - November 2024)**
 
-1. Introduction to Machine Learning [notebook](Machine_Learning_SoftUni_Sep_Nov_24/01.Introduction_to_Machine_Learning/notes.ipynb)
-2. Linear and Logistic Regression [notebook](Machine_Learning_SoftUni_Sep_Nov_24/02.Linear_and_Logistic_Regressions/notes.ipynb)
-3. Model Training and Improvement [notebook](#)
-4. Tree and Ensemble Methods [notebook](#)
-5. Support Vector Machines [notebook](#)
-6. Clustering [notebook](#)
-7. Dimensionality Reduction [notebook](#)
-8. Introduction to Neural Networks [notebook](#)
-9. Time series [notebook](#)
-10. Exam Preparation: End-to-end Project (Q&A session) [notebook](#)
-11. Course summary (Q&A session) [notebook](#)
+1. Introduction to Machine Learning [notes](Machine_Learning_SoftUni_Sep_Nov_24/01.Introduction_to_Machine_Learning/notes.ipynb)
+2. Linear and Logistic Regression [notes](Machine_Learning_SoftUni_Sep_Nov_24/02.Linear_and_Logistic_Regressions/notes.ipynb)
+3. Model Training and Improvement [notes](Machine_Learning_SoftUni_Sep_Nov_24/03.Model_Training_and_Improvement/notes.ipynb)
+4. Tree and Ensemble Methods [notes](#)
+5. Support Vector Machines [notes](#)
+6. Clustering [notes](#)
+7. Dimensionality Reduction [notes](#)
+8. Introduction to Neural Networks [notes](#)
+9. Time series [notes](#)
+10. Exam Preparation: End-to-end Project (Q&A session) [notes](#)
+11. Course summary (Q&A session) [notes](#)
 
 ## Papers for review:
+### Machine Learning:
+1. 
+### Deep learning:
 1. Dropout: A Simple Way to Prevent Neural Networks from Overfitting [link](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
 2. Mish: A Self Regularized Non-Monotonic Activation Function [link](https://arxiv.org/abs/1908.08681)
 3. A Fast Learning Algorithm for Deep Belief Nets [link](https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf)
