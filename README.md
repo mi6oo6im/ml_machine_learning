@@ -16,12 +16,20 @@
 
 ## Papers for review:
 ### Machine Learning:
+#### Passed peer review:
+1. Spatiotemporal Cluster Analysis of Gridded Temperature Data -- A Comparison Between K-means and MiSTIC, 2 Jul 2023 [link](https://arxiv.org/abs/2307.00480)
+2. DTW k-means clustering for fault detection in photovoltaic modules, 13 Jun 2023 [link](https://arxiv.org/abs/2306.08003)
+3. Fast Distributed k-Means with a Small Number of Rounds, 15 Mar 2023 [link](https://arxiv.org/abs/2201.13217)
+4. Challenges and perspectives in recurrence analyses of event time series, 12 Sep 2024  [link](https://arxiv.org/abs/2409.08398)
+4. Children Age Group Detection based on Human-Computer Interaction and Time Series Analysis, 7 Mar 2024  [link](https://arxiv.org/abs/2403.04574)
+#### Without peer review:
 1. Socially Fair k-Means Clustering, 17 Jun 2020 [link](https://paperswithcode.com/paper/fair-k-means-clustering)
 2. Adaptively Robust and Sparse K-means Clustering, 9 Jul 2024 [link](https://paperswithcode.com/paper/adaptively-robust-and-sparse-k-means)
 3. A Tutorial on Principal Component Analysis, 3 Apr 2014 [link](https://paperswithcode.com/paper/a-tutorial-on-principal-component-analysis)
 4. AutoSoccerPose: Automated 3D posture Analysis of Soccer Shot Movements, 20 May 2024  [link](https://paperswithcode.com/paper/autosoccerpose-automated-3d-posture-analysis)
 
 ### Deep learning:
+#### Passed peer review:
 1. Dropout: A Simple Way to Prevent Neural Networks from Overfitting [link](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf)
 2. Mish: A Self Regularized Non-Monotonic Activation Function [link](https://arxiv.org/abs/1908.08681)
 3. A Fast Learning Algorithm for Deep Belief Nets [link](https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf)
